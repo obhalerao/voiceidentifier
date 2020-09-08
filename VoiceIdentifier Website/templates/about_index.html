@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Voice Identifier - About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="/static/styles/style.css"/>
+
+  </head>
+  <body>
+    
+    <div class="top-nav">
+            <ul class="top-horizontal">
+                <li class="top-menu lefty" id="welcome">Voice Identifier</li>
+                <li class="top-menu righty"><a href="https://voiceidentifier.sites.tjhsst.edu/record">Record</a></li>
+                <li class="top-menu righty"><a href="https://voiceidentifier.sites.tjhsst.edu">Home</a></li>
+            </ul>
+    </div>
+    
+    <div class="content">
+        
+        <img class="aboutimg" src="/static/images/about.jpg" width=400 height=400>
+        <h1>About</h1>
+        
+	    <p>I'm Omkar Bhalerao, a current senior (class of 2020) at Thomas Jefferson High School for Science and Technology.
+	   This website is for Voice Identifier, a project I am researching in the Computer Systems Lab.</p>
+	   
+	   <p>Voice Identifier is an online service that aims to classify people based solely on characteristics of their voice.
+	   It is a type of speaker recognition system.</p>
+	   
+	   <p>Currently, to classify the audio I use a <a href="https://en.wikipedia.org/wiki/Feedforward_neural_network">feedforward neural network</a>. My model takes featuers from the <a href="https://en.wikipedia.org/wiki/Discrete_Fourier_transform">discrete Fourier transform</a> 
+	   and the <a href="https://en.wikipedia.org/wiki/Spectral_density#Power_spectral_density">power spectral density</a> of the audio file.
+	   However, my model has not been very effective in classifying audio, so I am currently researching alternate models.</p>
+	    
+	   <p>This site allows you to <a href="https://voiceidentifier.sites.tjhsst.edu/record">test my model</a> in action.
+	   After a person speaks into their microphone, my model will analyze their audio and output a classification prediction.</p>
+        
+       <p><strong>Sample classification:</strong></p>
+       <audio controls="true" src="/static/audio/sample.wav"></audio>
+       <p>Your predicted speaker is: Omkar Bhalerao</p>
+       <br>
+    </div>
+  </body>
+</html>

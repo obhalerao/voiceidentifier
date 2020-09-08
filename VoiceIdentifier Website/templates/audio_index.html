@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Voice Identifier - Record</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="/static/styles/style.css"/>
+
+  </head>
+  <body>
+    
+    <div class="top-nav">
+            <ul class="top-horizontal">
+                <li class="top-menu lefty" id="welcome">Voice Identifier</li>
+                <li class="top-menu righty"><a href="https://voiceidentifier.sites.tjhsst.edu/about">About</a></li>
+                <li class="top-menu righty"><a href="https://voiceidentifier.sites.tjhsst.edu">Home</a></li>
+            </ul>
+    </div>
+    
+    <div class="content">
+	<p>Press the "Record" button to begin recording, and the "Stop" button to stop. Your recording can be accessed under the "Recordings" section.</p>
+	<div id="controls">
+		<button id="recordButton" class="tooltip">
+		    Record
+		    <span class="tooltiptext">Click this button to start recording!</span>
+		</button>
+		<button id="stopButton" class="tooltip" disabled>
+		    Stop
+		    <span class="tooltiptext">Click this button to stop recording!</span>
+		</button>
+	</div>
+	<ol id="results"></ol>
+
+	<h3>Recordings</h3>
+	<ol id="recordingsList"></ol>
+
+  	<!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+	<script src="../static/js/WebAudioRecorder.js"></script>
+	<script src="../static/js/getAudio.js"></script>
+    <script src="../static/js/WebAudioRecorderWav.js"></script>
+    <script src="../static/js/WavAudioEncoder.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+
+    </div>
+  </body>
+</html>
